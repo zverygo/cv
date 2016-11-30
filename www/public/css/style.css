@@ -1,0 +1,21 @@
+.cv-nav {
+    background-color: #e6ffe6;
+    /*color: #ffffff;*/
+}
+
+.cv-nav h4{
+    /*color: #ffffff;*/
+}
+
+.cv-contact {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #004d1a;
+    color: #8bca9b;
+    font-size: 15px;
+}
+
+.cv-contact h4 {
+    color: #ffffff;
+    font-size: 45px;
+}
