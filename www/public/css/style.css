@@ -11,9 +11,6 @@
 }
 
 .cv-main a {
-    /*padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #004d1a;*/
     color: #8bca9b;
     font-size: 15px;
 }
@@ -21,4 +18,12 @@
 .cv-main h4 {
     color: #ffffff;
     font-size: 45px;
+}
+
+.cv-navbar-right {
+    float: right !important;
+}
+
+.cv-info {
+    padding-top: 30px;
 }
