@@ -23,7 +23,7 @@
 }
 
 .cv-navbar-right {
-    float: right !important;
+    float: right ;
 }
 
 .cv-info {
@@ -62,27 +62,51 @@
 
 @media screen and (max-width: 767px) {
     .masonry [data-columns]::before {
-        content: '1 .col-xs-12';
+        content: '2 .col-xs-12';
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .masonry [data-columns]::before {
-        content: '2 .col-sm-6';
+        content: '2 .col-xs-6';
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .masonry [data-columns]::before {
-        content: '3 .col-md-4';
+        content: '3 .col-xs-4';
     }
 }
 
 @media screen and (min-width: 1200px) {
     .masonry [data-columns]::before {
-        content: '4 .col-lg-3';
+        content: '4 .col-xs-3';
     }
 }
+
+/*----------------------*/
+@media screen and (max-width: 480px){
+	#grid[data-columns]::before {
+		content: '1 .column.size-1of1';
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	#grid[data-columns]::before {
+		content: '2 .column.size-1of2';
+	}
+}
+@media screen and (min-width: 769px) {
+	#grid[data-columns]::before {
+		content: '3 .column.size-1of3';
+	}
+}
+
+/* Again, you’re free to use and define the classes: */
+.column { float: left; }
+.size-1of1 { width: 100%; }
+.size-1of2 { width: 50%; }
+.size-1of3 { width: 33.333%; }
 
 /*----------------------*/
 .test a {
